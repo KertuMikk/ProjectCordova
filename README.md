@@ -8,5 +8,5 @@
 ###Juhend
 Otseselt ühtegi juhendit ei kasutanud. Otsisin erinevate asjade kohta googlest ja stackoverflow-st.
 ###Screenshotid
-![screenshot](screenshots/screensgot1.png "screenshot")
-![screenshot](screenshots/screensgot2.png "screenshot")
+![screenshot](screenshots/screenshot1.png "screenshot")
+![screenshot](screenshots/screenshot2.png "screenshot")
