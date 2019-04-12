@@ -8,6 +8,8 @@ let minutes
 let minutesleft
 let secondsleft
 let intervalCntdwn
+let menu
+let timer
 
 
 let app = {
@@ -53,9 +55,32 @@ function init () {
    
     
     document.querySelector('#startCountdown').addEventListener('click',countdownStart)
-    
-  }
-
+    document.querySelector('#exit').addEventListener('click',exit)
+    document.querySelector('#totimer').addEventListener('click',totimer)
+    document.querySelector('#backtomenu').addEventListener('click',backtomenu)
+    menu = document.querySelector('#menu')
+    timer = document.querySelector('#timer')
+}
+function playMP3(mediaSource) {
+    let src = mediaSource;
+    var myMedia =
+    new Media(src,
+        function () { },
+        function () {  }
+    );
+    myMedia.play();
+}
+function exit(){
+    navigator.app.exitApp(); 
+}
+function totimer(){
+    menu.style.display = "none"
+    timer.style.display = "block"
+}
+function backtomenu(){
+    menu.style.display = "block"
+    timer.style.display = "none"
+}
 
 function countdownStart(){
     console.log("CLICKED")
@@ -95,7 +120,7 @@ function updateTimer(){
     } 
     secondsleft -= 1;
     if(minutesleft < 0){
-        
+        playMP3(cordova.file.applicationDirectory + 'www/sound/dingdong.mp3');
         countdown.innerHTML = "Finished!"
     
     }else{

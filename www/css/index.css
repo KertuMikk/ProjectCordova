@@ -95,3 +95,20 @@ button{
 .timeleft{
     font-size: 50px;
 }
+.menu{
+    display: block;
+}
+.timer{
+    display: none;
+}
+.menubuttons{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top:200px;
+    font-size: 90px;
+}
+#exit,
+#totimer{
+    font-size: 40px;
+}
