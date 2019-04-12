@@ -25,34 +25,17 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <title>Timer</title>
     </head>
     <body>
-       <div class="dateandtime">
-            <div class = "clock"  id="clock"></div>
-            <div class="date" id="date"></div>
-        </div>
-        <div class="cntdwn" id="cntdwn">
-            
-            
-            <input type="number" id="min" placeholder="Min">
-            
-            <input type="number" id="sec" placeholder="sec">
-            <br>
-            <input type="button" value="Start" id="startCountdown" >
-            <p class="timeleft" id="timeleft">Time left</p>
-            <div class="timeleft" id="countdown"></div>
-             
-        </div>
-        <div class="change">
-            <div class ="StyleChange" id ="StyleChange">
-                <button id="change-color" >Set color</button>
-                <input type="color" id="myColor">
-                <button id="change-bckgrnd-color" >Set color</button>
-                <input type="color" id="myBckgrndColor">
+        <section class="menu" id="menu">
+            <div class="menubuttons">
+                <button id="totimer" >Go to timer</button>
+                <br>
+                <button id="exit" >Exit</button>
             </div>
-        </div>
-
+        </section>
+       
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
