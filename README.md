@@ -5,8 +5,8 @@
 - Unzipi folder ja liigu PowerShellis projekti kausta
 - Kirjuta PowerShelli käsk: npm install
 - Kirjuta PowerShelli käsk: cordova run android
-###Juhend
+### Juhend
 Otseselt ühtegi juhendit ei kasutanud. Otsisin erinevate asjade kohta googlest ja stackoverflow-st.
-###Screenshotid
+### Screenshotid
 ![screenshot](screenshots/screenshot1.png "screenshot")
 ![screenshot](screenshots/screenshot2.png "screenshot")
